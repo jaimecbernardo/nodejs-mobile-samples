@@ -8,6 +8,12 @@ The sample app runs the Node.js engine in the Cordova to start an `HTTP` and `so
 
 Note the instructions for the Cordova app on [Janea's site](https://code.janeasystems.com/nodejs-mobile/getting-started-cordova)
 
+This sample also uses `bower`, `gulp` and `ios-deploy` to build and run. These can be installed through npm:
+```
+ $ npm install -g bower
+ $ npm install -g gulp-cli
+ $ npm install -g ios-deploy
+```
 
 ## How to run: Clone and Install Dependencies
 
@@ -46,6 +52,8 @@ A script is provided for these steps:
 ```
  $ npm run setup-cordova
 ```
+
+> If you get a `Plugin doesn't support this project's cordova-ios version. cordova-ios: X.X.X, failed version requirement: <4.5.0` warning for `cordova-plugin-console`, the plugin will be skipped but the sample will still work, as the plugin was integrated in `cordova-ios` versions `>=4.5.0`.
 
 The output app is in the `./cordova/ExampleCordovaAngular` folder.
 
